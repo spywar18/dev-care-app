@@ -11,7 +11,6 @@ import {
 } from "chart.js";
 import { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -22,8 +21,6 @@ ChartJS.register(
   Legend,
   Filler
 );
-
-
 export function LineChart() {
   const [eyeData, setEyeData] = useState([0, 0, 0, 0, 0, 0, 0]);
 
@@ -46,8 +43,6 @@ export function LineChart() {
       },
     ],
   };
-
-
   return (
     <Line
       data={data}
